@@ -7,11 +7,13 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
-.navblock {cursor: pointer;}
-.sorting {text-align: right;}
+
 .header {
   border-top: 5px solid #5f636e;
   padding-top: 26px; }
+
+.header__logo {
+  padding-right: 13px; }
 
 .header__top {
   display: -webkit-box;
@@ -23,25 +25,26 @@ html {
   padding-bottom: 10px; }
 
 .header__company-name {
-  font-family: "Roboto", "Arial", sans-serif;
-  padding: 0;
-  margin: 0;
-  color: #003a7b;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 50px;
-  text-transform: uppercase;
-  padding-top: 6px;
-  padding-bottom: 8px; }
+    font-family: "Lato", "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #373737;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-top: 0px;
+    padding-bottom: 27px;}
 
 .header__company-description {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 600;
-  color: #003a7b; }
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase; }
   .header__company-description--subtext {
-    text-transform: uppercase; }
+    font-weight: 600; }
 
 .header__top-container {
   display: -webkit-box;
@@ -70,19 +73,31 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
-.header__phone {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 32px;
-  font-weight: 600;
-  color: #003a7b; }
-  .header__phone--decoration {
-    color: #db2d01; }
+.header__phone-text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  padding-bottom: 3px; }
+
+.header__phone-link {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000; }
 
 .header__email {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   color: #db2d01;
   font-size: 18px;
   line-height: 24px;
@@ -97,14 +112,14 @@ html {
   margin: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #003a7b;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 15px;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 .header__bottom {
-  background-color: #f9f9f9;
+  background-color: #ebe7e7;
   padding-bottom: 18px;
   position: relative; }
   .header__bottom::before {
@@ -130,7 +145,7 @@ html {
   padding-right: 49px;
   position: relative;
   z-index: 10;
-  background-color: #f9f9f9;
+  background-color: #ebe7e7;
   position: relative; }
   .header__menu::before {
     content: "";
@@ -207,7 +222,7 @@ html {
     width: 0;
     height: 0;
     border-left: 22px solid transparent;
-    border-bottom: 18px solid #f9f9f9;
+    border-bottom: 18px solid #ebe7e7;
     z-index: 11;
     bottom: -1px;
     right: -1px; }
@@ -311,10 +326,7 @@ html {
   padding-bottom: 10px;
   border: 1px solid #e5e5e5;
   border-top: 0; }
-  .products__item:hover {
-    background-color: rgba(0, 0, 0, 0.1); 
-    cursor:pointer;
-  }
+
 .products__link {
   text-decoration: none;
   color: #000000;
@@ -489,8 +501,3 @@ html {
     left: 1px;
     border-radius: 50%;
     background-color: currentColor; }
-main .nav>li>a {
-    position: relative;
-    display: block;
-    padding: 20px 15px !important;
-}
